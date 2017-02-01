@@ -15,11 +15,15 @@ export default class LotteryNumbers extends Component {
     };
   }
 
+  getNumber() {
+    return Math.floor(Math.random() * 49 + 1);
+  }
+
   generateNumbers() {
     var numbers = new Set();
     for (var i = 0; i < 6; i++) {
       do {
-        var num = Math.floor(Math.random() * 49 + 1);
+        var num = this.getNumber();
       } while (numbers.has(num));
       numbers.add(num);
     }
