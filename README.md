@@ -2,4 +2,4 @@
 
 Very simple React Native App for test
 
-Test-1
+Test-2
